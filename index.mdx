@@ -3,20 +3,22 @@ title: "Ryzen AI Software"
 description: "Tools and runtime libraries for optimizing and deploying AI inference on AMD Ryzen AI powered PCs."
 ---
 
-AMD Ryzen&trade; AI Software includes the tools and runtime libraries for optimizing and deploying AI inference on AMD Ryzen&trade; AI powered PCs. Ryzen AI software enables applications to run on the neural processing unit (NPU) built in the AMD XDNA&trade; architecture, as well as on the integrated GPU. This allows developers to build and deploy models trained in PyTorch or TensorFlow and run them directly on laptops powered by Ryzen AI using ONNX Runtime and the Vitis&trade; AI Execution Provider (EP).
+AMD Ryzen™ AI Software includes the tools and runtime libraries for optimizing and deploying AI inference on AMD Ryzen™ AI powered PCs. Ryzen AI software enables applications to run on the neural processing unit (NPU) built in the AMD XDNA™ architecture, as well as on the integrated GPU. This allows developers to build and deploy models trained in PyTorch or TensorFlow and run them directly on laptops powered by Ryzen AI using ONNX Runtime and the Vitis™ AI Execution Provider (EP).
 
-<img src="/images/rai-sw.png" alt="Ryzen AI Software stack" />
+![Ryzen AI Software stack](/images/rai-sw.png)
 
 ## Quick Start
 
 <CardGroup cols={3}>
-  <Card title="Supported Configurations" href="/relnotes#supported-configurations" icon="circle-check">
+  <Card title="Supported Configurations" icon="circle-check" href="/relnotes#supported-configurations">
     Hardware and OS matrix for Ryzen AI Software.
   </Card>
-  <Card title="Installation Instructions" href="/inst" icon="download">
+
+  <Card title="Installation Instructions" icon="download" href="/inst">
     Install the NPU driver and Ryzen AI Software on Windows.
   </Card>
-  <Card title="Examples, Demos, Tutorials" href="/examples" icon="lightbulb">
+
+  <Card title="Examples, Demos, Tutorials" icon="lightbulb" href="/examples">
     Browse runnable samples and end-to-end demos.
   </Card>
 </CardGroup>
@@ -35,7 +37,7 @@ For more details, refer to the [Model Quantization](/model_quantization) page.
 
 ### CNN/Transformer Compilation and Deployment
 
-The AI model is deployed using the ONNX Runtime with either C++ or Python APIs. The Vitis AI Execution Provider included in the ONNX Runtime intelligently determines what portions of the AI model should run on the NPU, optimizing workloads to ensure optimal performance with lower power consumption.
+The AI model is deployed using the ONNX Runtime with either C\+\+ or Python APIs. The Vitis AI Execution Provider included in the ONNX Runtime intelligently determines what portions of the AI model should run on the NPU, optimizing workloads to ensure optimal performance with lower power consumption.
 
 For more details, refer to the [Model Compilation and Deployment](/modelrun) page.
 
@@ -50,28 +52,5 @@ At the bottom, **OnnxRuntime GenAI (OGA)** or llama.cpp (only supported for iGPU
 <a id="llm-software-stack-table" />
 
 **Ryzen AI Software Stack**
-
-<table>
-  <thead>
-    <tr>
-      <th>Your Python Application</th>
-      <th>Your LLM Stack</th>
-      <th>Your Native Application</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="/llm/high_level_python">Lemonade Python API*</a></td>
-      <td><a href="/llm/server_interface">Lemonade Server Interface*</a></td>
-      <td><a href="/hybrid_oga">OGA C++ Headers</a> <strong>OR</strong> <a href="https://github.com/ggml-org/llama.cpp">llama.cpp C++ Headers</a></td>
-    </tr>
-    <tr>
-      <td colSpan={3}><a href="https://github.com/microsoft/onnxruntime-genai">Custom AMD OnnxRuntime GenAI (OGA)</a> <strong>OR</strong> <a href="https://github.com/ggml-org/llama.cpp">llama.cpp*</a></td>
-    </tr>
-    <tr>
-      <td colSpan={3}><a href="https://www.amd.com/en/products/processors/consumer/ryzen-ai.html">AMD Ryzen AI Driver and Hardware</a></td>
-    </tr>
-  </tbody>
-</table>
 
 For more details, refer to the [LLM Deployment Overview](/llm/overview) page.
