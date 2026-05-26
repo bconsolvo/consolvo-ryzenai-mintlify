@@ -1,0 +1,104 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "mint",
+  "name": "Ryzen AI Software",
+  "metadata": {
+    "og:site_name": "Ryzen AI Software",
+    "og:title": "Ryzen AI Software Documentation",
+    "og:description": "Tools and runtime libraries for optimizing and deploying AI inference on AMD Ryzen AI powered PCs."
+  },
+  "colors": {
+    "primary": "#ED1C24",
+    "light": "#F4484D",
+    "dark": "#C8171E"
+  },
+  "favicon": "/assets/favicon.ico",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Overview",
+            "pages": [
+              "index",
+              "relnotes"
+            ]
+          },
+          {
+            "group": "Getting Started on the NPU",
+            "pages": [
+              "inst",
+              "examples",
+              "linux"
+            ]
+          },
+          {
+            "group": "Running Models on the NPU",
+            "pages": [
+              "model_quantization",
+              "modelrun",
+              "app_development",
+              "whisper_cpp"
+            ]
+          },
+          {
+            "group": "Running LLMs on the NPU",
+            "pages": [
+              "llm/overview",
+              "llm/server_interface",
+              "llm/high_level_python",
+              "hybrid_oga",
+              "oga_model_prepare"
+            ]
+          },
+          {
+            "group": "Running Models on the GPU",
+            "pages": [
+              "gpu/ryzenai_gpu"
+            ]
+          },
+          {
+            "group": "Windows ML on AMD Ryzen AI",
+            "pages": [
+              "winml/winml_overview",
+              "winml/installation",
+              "winml/model_support",
+              "winml/model_deployment",
+              "winml/model_conversion",
+              "winml/winml_ep",
+              "winml/winml_example",
+              "winml/faq",
+              "winml/troubleshooting"
+            ]
+          },
+          {
+            "group": "Additional Topics",
+            "pages": [
+              "xrt_smi",
+              "ai_analyzer",
+              "sd_demo",
+              "ryzen_ai_libraries",
+              "ops_support",
+              "licenses"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "navbar": {
+    "links": [
+      {
+        "label": "GitHub",
+        "href": "https://github.com/bconsolvo/consolvo-ryzenai-mintlify"
+      }
+    ]
+  },
+  "footer": {
+    "socials": {
+      "github": "https://github.com/bconsolvo/consolvo-ryzenai-mintlify"
+    },
+    "copyright": "Copyright (C) 2023-2026 Advanced Micro Devices, Inc."
+  }
+}
